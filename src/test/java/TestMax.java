@@ -37,7 +37,7 @@ public class TestMax extends BaseTest {
 
 
         //Вводим наименование Бренда
-        $(byXpath("//elma-form-control/elma-type-string/div/input")).sendKeys("auto_test_123456"); // воткнуть переменную на имя бренд
+        $(byXpath("//elma-form-control/elma-type-string/div/input")).sendKeys("auto_test_1234567"); // воткнуть переменную на имя бренд
 //Выбор из справочника рекламодателей
         $(byXpath("(.//*[normalize-space(text()) and normalize-space(.)='Рекламодатель'])[1]/following::button[1]")).click();
 // Выбираем из справочника  бренд
@@ -54,8 +54,8 @@ public class TestMax extends BaseTest {
 
         $(byXpath("//*/text()[normalize-space(.)='Сохранить']/parent::*")).shouldBe(enabled,ofSeconds(5)).click();
 
-        $(byText("auto_test_123456")).shouldBe(enabled,ofSeconds(5));
-        $(byText("auto_test_123456")).click();
+        $(byText("auto_test_1234567")).shouldBe(enabled,ofSeconds(5));
+        $(byText("auto_test_1234567")).click();
         $(byText(";ждаТь")).shouldBe(enabled,ofSeconds(15));
 
         /*
