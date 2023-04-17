@@ -39,7 +39,7 @@ import com.codeborne.selenide.Selenide;
 
 
         //Вводим наименование Бренда
-        $(byXpath("//elma-form-control/elma-type-string/div/input")).sendKeys("auto_test_1234565412"); // воткнуть переменную на имя бренд
+        $(byXpath("//elma-form-control/elma-type-string/div/input")).sendKeys("auto_test_a2"); // воткнуть переменную на имя бренд
 //Выбор из справочника рекламодателей
         $(byXpath("(.//*[normalize-space(text()) and normalize-space(.)='Рекламодатель'])[1]/following::button[1]")).click();
 // Выбираем из справочника  бренд
@@ -53,10 +53,10 @@ import com.codeborne.selenide.Selenide;
         $(byText("Жевательная конфета")).shouldBe(enabled,ofSeconds(5));
         $(byText("Жевательная конфета")).click();
 // Нажимаем сохранить
-        $(byXpath("//*/text()[normalize-space(.)='Сохранить']/parent::*")).shouldBe(enabled,ofSeconds(25)).click();
+        $(byXpath("//*/text()[normalize-space(.)='Сохранить']/parent::*")).shouldBe(enabled,ofSeconds(5)).click();
 //Ждем 5 секунд м нажимаем на созданный элемент
-        $(byText("auto_test_1234565412")).shouldBe(enabled,ofSeconds(15));
-        $(byText("auto_test_1234565412")).click();
+        $(byText("auto_test_a2")).shouldBe(enabled,ofSeconds(5));
+        $(byText("auto_test_a2")).click();
         $(byText(";ждаТь")).shouldBe(enabled,ofSeconds(15));
 
 
@@ -67,11 +67,11 @@ import com.codeborne.selenide.Selenide;
 
                         open("http://elmadev.gazprom-media.ru");
 //Это блок авторизации
-                        $(byName("authLogin")).click();
-                        $(byName("authLogin")).setValue("m.magnichkin");
-                        $(byName("password")).click();
-                        $(byName("password")).setValue("uW2vHCxhnbwWKwL");
-                        $(By.cssSelector(".submit-button")).click();
+                       // $(byName("authLogin")).click();
+                       // $(byName("authLogin")).setValue("m.magnichkin");
+                       // $(byName("password")).click();
+                       // $(byName("password")).setValue("uW2vHCxhnbwWKwL");
+                       // $(By.cssSelector(".submit-button")).click();
 
 
 //выполняем навигацию на меню НСИ
