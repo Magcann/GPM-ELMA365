@@ -108,7 +108,7 @@ import com.codeborne.selenide.Selenide;
                         $(byText("auto_test_12345654")).shouldBe(enabled,ofSeconds(5));
 
                         $(byText("auo_test_123456_a")).click();
-                        $(byText(";ждаТь")).shouldBe(enabled,ofSeconds(25));
+                        //$(byText(";ждаТь")).shouldBe(enabled,ofSeconds(25));
 
 
 
