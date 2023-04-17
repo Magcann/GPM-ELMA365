@@ -1,0 +1,1 @@
+{"uuid":"e33ff37e-c768-413b-8252-34401bcfe18c","name":"MAX","children":["f686bb40-8ae4-441c-94be-ef05ca502e8a","000be5d0-5e86-4bdb-ac21-c598105f5908"],"befores":[{"name":"setBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1681724233915,"stop":1681724234644}],"afters":[],"start":1681724233870,"stop":1681724285577}
